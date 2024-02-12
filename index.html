@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link href="https://fonts.googleapis.com/css?family=Overpass:400,700"
+      rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    .attribution { font-size: 11px; text-align: center; color: var(--white); }
+    .attribution a { color: hsl(35, 45%, 44%); }
+  </style>
+  </head>
+  <body>
+
+    <!-- Rating state start -->
+    <main>
+      <section id="mainContainer" class="card">
+        <article class="card__content">
+          <div class="card__content-icon"><img src="./images/icon-star.svg"
+              alt="icon star" height="13" width="14"></div>
+          <h2 class="card__content-title">How did we do?</h2>
+          <p class="card__content-paragraph">Please let us know how we did with
+            your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+        </article>
+        <!-- <form class="card__form" action="#">
+          <label class="card__form-label" for="one"><input class="card__form-radio" id="one" type="radio"><span class="card__form-number">1</span></label>
+          <label class="card__form-label" for="two"><input checked class="card__form-radio" id="two" type="radio"><span class="card__form-number">2</span></label>
+          <label class="card__form-label" for="three"><input class="card__form-radio" id="three" type="radio"><span class="card__form-number">3</span></label>
+          <label class="card__form-label" for="four"><input class="card__form-radio" id="four" type="radio"><span class="card__form-number">4</span></label>
+          <label class="card__form-label" for="five"><input class="card__form-radio" id="five" type="radio"><span class="card__form-number">5</span></label>
+        </form> -->
+        <ul class="card__list">
+          <li><a id="btn-voting" class="card__list-number" href="#">1</a></li>
+          <li><a id="btn-voting" class="card__list-number" href="#">2</a></li>
+          <li><a id="btn-voting" class="card__list-number" href="#">3</a></li>
+          <li><a id="btn-voting" class="card__list-number" href="#">4</a></li>
+          <li><a id="btn-voting" class="card__list-number" href="#">5</a></li>
+        </ul>
+        <button id="btn" class="card__button">SUBMIT</button>
+      </section>
+      <section id="thanksContainer" class="gratitude">
+        <img class="gratitude__image" src="./images/illustration-thank-you.svg"
+          alt="cash register with card and coin" width="144" height="96">
+        <article class="gratitude__content">
+          <p id="selected" class="gratitude__content-orange">You selected <span id="rating">5</span> out of 5</p>
+          <h2 class="gratitude__content-title">Thank you!</h2>
+          <p class="gratitude__content-paragraph"> We appreciate you taking the
+            time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch! </p>
+        </article>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
